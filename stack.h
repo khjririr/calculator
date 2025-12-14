@@ -8,6 +8,7 @@ Item * contents;
 int top;
 int size;
 } Stack;
+// 202413160 김현준: stack.h modified
 
 Stack * create_stack(int initial_size);
 void make_empty(Stack *s);
@@ -18,4 +19,5 @@ Item pop(Stack *s);
 Item peek(Stack *s);
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
+
 #endif
