@@ -11,6 +11,7 @@ Stack * create_stack(int initial_size)
 	s->size=initial_size;
 	return s;
 }
+// 202413160 김현준: stack.c modified
 
 void make_empty(Stack * stack)
 {
@@ -73,4 +74,5 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
